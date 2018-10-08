@@ -34,14 +34,21 @@ Variables Needed:
 //Declare the variables
 var words = ["Lennon", "Liverpool", "Abbey Road", "Sgt. Pepper", "George Martin", "Candlestick Park"];
 var cpuWord = null;
-var userGuess = [];
+var userGuess = null;
 var wins = 0;
 var guessLeft = 9;
 var prevGuesses = [];
-var reset; 
 
 //Create functions using variables above
 /*guessesLeft variable printed onto browser*/
+
+var reset = function {
+    $cpuWord = $words[Math.floor(Math.random() * words.length)];
+    guessLeft - 9;
+    prevGuesses = [];
+    userGuess = null;
+}
+
 function {
     document.querySelector("#left").innerHTML = "Guesses Left: " + guessesLeft;
 }
